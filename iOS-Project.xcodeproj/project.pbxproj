@@ -13,6 +13,13 @@
 		430E13D8204C398C0044EFF0 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430E13D7204C398C0044EFF0 /* ProfileViewController.swift */; };
 		430E13DA204C39BD0044EFF0 /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430E13D9204C39BD0044EFF0 /* TaskViewController.swift */; };
 		430E13DC204C39CD0044EFF0 /* MyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430E13DB204C39CD0044EFF0 /* MyProfileViewController.swift */; };
+		43729A1020654A5000136064 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43729A0F20654A5000136064 /* String.swift */; };
+		43729A162065574000136064 /* SFUIText-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 43729A142065551A00136064 /* SFUIText-Medium.otf */; };
+		43729A172065574100136064 /* SFUIText-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 43729A142065551A00136064 /* SFUIText-Medium.otf */; };
+		43729A182065574100136064 /* SFUIText-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 43729A142065551A00136064 /* SFUIText-Medium.otf */; };
+		43729A192065574600136064 /* SFUIText-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 43729A13206554CB00136064 /* SFUIText-Light.otf */; };
+		43729A1A2065574700136064 /* SFUIText-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 43729A13206554CB00136064 /* SFUIText-Light.otf */; };
+		43729A1B2065574800136064 /* SFUIText-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 43729A13206554CB00136064 /* SFUIText-Light.otf */; };
 		43F06E7A2044915500A00B18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F06E792044915500A00B18 /* AppDelegate.swift */; };
 		43F06E7C2044915500A00B18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F06E7B2044915500A00B18 /* ViewController.swift */; };
 		43F06E7F2044915500A00B18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43F06E7D2044915500A00B18 /* Main.storyboard */; };
@@ -54,7 +61,11 @@
 		430E13D7204C398C0044EFF0 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		430E13D9204C39BD0044EFF0 /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
 		430E13DB204C39CD0044EFF0 /* MyProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileViewController.swift; sourceTree = "<group>"; };
-		430E13DE204C3EA50044EFF0 /* SFUIText-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-Light.ttf"; sourceTree = "<group>"; };
+		43729A0F20654A5000136064 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		43729A1120654BAF00136064 /* fr */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = fr; path = fr.lproj/Main.storyboard; sourceTree = "<group>"; };
+		43729A1220654BAF00136064 /* fr */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = fr; path = fr.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		43729A13206554CB00136064 /* SFUIText-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-Light.otf"; sourceTree = "<group>"; };
+		43729A142065551A00136064 /* SFUIText-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-Medium.otf"; sourceTree = "<group>"; };
 		43F06E762044915500A00B18 /* iOS-Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		43F06E792044915500A00B18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43F06E7B2044915500A00B18 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -111,9 +122,26 @@
 		430E13DD204C3E4C0044EFF0 /* Ressources */ = {
 			isa = PBXGroup;
 			children = (
-				430E13DE204C3EA50044EFF0 /* SFUIText-Light.ttf */,
+				43729A13206554CB00136064 /* SFUIText-Light.otf */,
+				43729A142065551A00136064 /* SFUIText-Medium.otf */,
 			);
 			path = Ressources;
+			sourceTree = "<group>";
+		};
+		43729A0D20654A3900136064 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				43729A0E20654A3F00136064 /* Extensions */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		43729A0E20654A3F00136064 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				43729A0F20654A5000136064 /* String.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		43F06E6D2044915500A00B18 = {
@@ -141,6 +169,7 @@
 		43F06E782044915500A00B18 /* iOS-Project */ = {
 			isa = PBXGroup;
 			children = (
+				43729A0D20654A3900136064 /* Tools */,
 				430E13DD204C3E4C0044EFF0 /* Ressources */,
 				43F06EA92044917F00A00B18 /* Controllers */,
 				43F06EA82044917500A00B18 /* Views */,
@@ -340,6 +369,7 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
 			);
 			mainGroup = 43F06E6D2044915500A00B18;
 			productRefGroup = 43F06E772044915500A00B18 /* Products */;
@@ -358,6 +388,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43729A192065574600136064 /* SFUIText-Light.otf in Resources */,
+				43729A162065574000136064 /* SFUIText-Medium.otf in Resources */,
 				43F06E842044915500A00B18 /* LaunchScreen.storyboard in Resources */,
 				43F06E812044915500A00B18 /* Assets.xcassets in Resources */,
 				43F06E7F2044915500A00B18 /* Main.storyboard in Resources */,
@@ -368,6 +400,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43729A1A2065574700136064 /* SFUIText-Light.otf in Resources */,
+				43729A172065574100136064 /* SFUIText-Medium.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,6 +409,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43729A1B2065574800136064 /* SFUIText-Light.otf in Resources */,
+				43729A182065574100136064 /* SFUIText-Medium.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -545,6 +581,7 @@
 				430E13D6204C397B0044EFF0 /* HomeViewController.swift in Sources */,
 				430E13DC204C39CD0044EFF0 /* MyProfileViewController.swift in Sources */,
 				43F06EAF2044921D00A00B18 /* TaskManager.swift in Sources */,
+				43729A1020654A5000136064 /* String.swift in Sources */,
 				43F06EAB204491AE00A00B18 /* AccountManager.swift in Sources */,
 				430E13D8204C398C0044EFF0 /* ProfileViewController.swift in Sources */,
 				430E13DA204C39BD0044EFF0 /* TaskViewController.swift in Sources */,
@@ -589,6 +626,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				43F06E7E2044915500A00B18 /* Base */,
+				43729A1120654BAF00136064 /* fr */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -597,6 +635,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				43F06E832044915500A00B18 /* Base */,
+				43729A1220654BAF00136064 /* fr */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -608,6 +647,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -665,6 +705,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
