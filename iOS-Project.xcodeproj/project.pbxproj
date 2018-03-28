@@ -13,6 +13,7 @@
 		430E13D8204C398C0044EFF0 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430E13D7204C398C0044EFF0 /* ProfileViewController.swift */; };
 		430E13DA204C39BD0044EFF0 /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430E13D9204C39BD0044EFF0 /* TaskViewController.swift */; };
 		430E13DC204C39CD0044EFF0 /* MyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430E13DB204C39CD0044EFF0 /* MyProfileViewController.swift */; };
+		4311F6F62067E06600B977B9 /* AddTaskCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4311F6F52067E06600B977B9 /* AddTaskCollectionViewCell.swift */; };
 		43729A1020654A5000136064 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43729A0F20654A5000136064 /* String.swift */; };
 		43729A162065574000136064 /* SFUIText-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 43729A142065551A00136064 /* SFUIText-Medium.otf */; };
 		43729A172065574100136064 /* SFUIText-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 43729A142065551A00136064 /* SFUIText-Medium.otf */; };
@@ -61,11 +62,11 @@
 		430E13D7204C398C0044EFF0 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		430E13D9204C39BD0044EFF0 /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
 		430E13DB204C39CD0044EFF0 /* MyProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileViewController.swift; sourceTree = "<group>"; };
+		4311F6F52067E06600B977B9 /* AddTaskCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskCollectionViewCell.swift; sourceTree = "<group>"; };
 		43729A0F20654A5000136064 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
-		43729A1120654BAF00136064 /* fr */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = fr; path = fr.lproj/Main.storyboard; sourceTree = "<group>"; };
-		43729A1220654BAF00136064 /* fr */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = fr; path = fr.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		43729A13206554CB00136064 /* SFUIText-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-Light.otf"; sourceTree = "<group>"; };
 		43729A142065551A00136064 /* SFUIText-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-Medium.otf"; sourceTree = "<group>"; };
+		43731AB5206BBB32005C82E1 /* SFUIText-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-Regular.otf"; sourceTree = "<group>"; };
 		43F06E762044915500A00B18 /* iOS-Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		43F06E792044915500A00B18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43F06E7B2044915500A00B18 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -122,6 +123,7 @@
 		430E13DD204C3E4C0044EFF0 /* Ressources */ = {
 			isa = PBXGroup;
 			children = (
+				43731AB5206BBB32005C82E1 /* SFUIText-Regular.otf */,
 				43729A13206554CB00136064 /* SFUIText-Light.otf */,
 				43729A142065551A00136064 /* SFUIText-Medium.otf */,
 			);
@@ -142,6 +144,14 @@
 				43729A0F20654A5000136064 /* String.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		43729A2020655CA700136064 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4311F6F52067E06600B977B9 /* AddTaskCollectionViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		43F06E6D2044915500A00B18 = {
@@ -214,6 +224,7 @@
 		43F06EA82044917500A00B18 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				43729A2020655CA700136064 /* Cells */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -369,7 +380,6 @@
 			knownRegions = (
 				en,
 				Base,
-				fr,
 			);
 			mainGroup = 43F06E6D2044915500A00B18;
 			productRefGroup = 43F06E772044915500A00B18 /* Products */;
@@ -587,6 +597,7 @@
 				430E13DA204C39BD0044EFF0 /* TaskViewController.swift in Sources */,
 				43F06EB12044926300A00B18 /* Task.swift in Sources */,
 				43F06EAD204491F400A00B18 /* Friend.swift in Sources */,
+				4311F6F62067E06600B977B9 /* AddTaskCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -626,7 +637,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				43F06E7E2044915500A00B18 /* Base */,
-				43729A1120654BAF00136064 /* fr */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -635,7 +645,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				43F06E832044915500A00B18 /* Base */,
-				43729A1220654BAF00136064 /* fr */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";

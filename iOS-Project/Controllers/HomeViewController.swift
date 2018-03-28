@@ -8,8 +8,14 @@
 
 import UIKit
 
-class HomeViewController: ViewController {
+class HomeViewController: ViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
+    
+
+
+    @IBOutlet weak var taskCollectionView: UICollectionView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -23,8 +29,17 @@ class HomeViewController: ViewController {
         self.navigationController?.navigationBar.tintColor = UIColor.white
         
         //setting title
-        
         self.title = "home".localized.capitalized
+        
+        
+        let numberOfCellsPerRow: CGFloat = 2
+        if let flowLayout = taskCollectionView?.collectionViewLayout as? UICollectionViewFlowLayout {
+           // let horizontalSpacing = flowLayout.scrollDirection == .vertical ? flowLayout.minimumInteritemSpacing : flowLayout.minimumLineSpacing
+          //  let cellWidth = (view.frame.width - max(0, numberOfCellsPerRow - 1) * horizontalSpacing)/numberOfCellsPerRow
+           let cellWidth = view.frame.width / numberOfCellsPerRow - 3
+            
+            flowLayout.itemSize = CGSize(width: cellWidth, height: 74)
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -36,14 +51,49 @@ class HomeViewController: ViewController {
         print("profile button clicked")
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    // MARK: CollectionView Delegate
+    
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
     }
-    */
+    
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        print("test")
+        return TaskManager.sharedInstance.task.count + 1
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        //
+        let cell = indexPath.item == 0 ? collectionView.dequeueReusableCell(withReuseIdentifier: "AddTaskCell", for: indexPath) as! AddTaskCollectionViewCell : collectionView.dequeueReusableCell(withReuseIdentifier: "AddTaskCell", for: indexPath) as! AddTaskCollectionViewCell
+        
+        
+        return cell
+    }
+    
+//    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout,
+//                        sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+//
+//        // number of item per row
+//        let numberOfSets = CGFloat(2)
+//
+//        let width = (collectionView.frame.size.width - (numberOfSets * view.frame.size.width / 15)) / numberOfSets
+//
+//        let height = collectionView.frame.size.height / 2
+//
+//        return CGSize(width: width, height: height)
+//    }
+//
+//    // UICollectionViewDelegateFlowLayout method
+//
+//    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout,
+//                        insetForSectionAtIndex section: Int) -> UIEdgeInsets {
+//
+//        let cellWidthPadding = collectionView.frame.size.width / 30
+//        let cellHeightPadding = collectionView.frame.size.height / 4
+//        return UIEdgeInsets(top: cellHeightPadding,left: cellWidthPadding,
+//                            bottom: cellHeightPadding,right: cellWidthPadding)
+//    }
 
 }
