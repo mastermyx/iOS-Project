@@ -11,10 +11,15 @@ import UIKit
 class TaskManager: NSObject {
     static let sharedInstance = TaskManager()
     
-    let task : [Task] = []
+    var task : [Task] = []
     
     override init() {
         super.init()
-        print("TaskManager init")
+        task.append( Task(title: "task1", type: .important, date: Date()))
+        task.append( Task(title: "task2", type: .regular, date: Date()))
+        task.append( Task(title: "task3", type: .urgent, date: Date()))
+        task.append( Task(title: "task4", type: .urgentAndImportant, date: Date()))
     }
+    
+    
 }

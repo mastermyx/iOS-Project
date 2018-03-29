@@ -13,7 +13,9 @@
 		430E13D8204C398C0044EFF0 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430E13D7204C398C0044EFF0 /* ProfileViewController.swift */; };
 		430E13DA204C39BD0044EFF0 /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430E13D9204C39BD0044EFF0 /* TaskViewController.swift */; };
 		430E13DC204C39CD0044EFF0 /* MyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430E13DB204C39CD0044EFF0 /* MyProfileViewController.swift */; };
-		4311F6F62067E06600B977B9 /* AddTaskCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4311F6F52067E06600B977B9 /* AddTaskCollectionViewCell.swift */; };
+		430F9F5C206CBC90002E2E50 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430F9F5B206CBC90002E2E50 /* Color.swift */; };
+		430F9F63206D0CD0002E2E50 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 430F9F65206D0CD0002E2E50 /* Localizable.strings */; };
+		4311F6F62067E06600B977B9 /* TaskCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4311F6F52067E06600B977B9 /* TaskCollectionViewCell.swift */; };
 		43729A1020654A5000136064 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43729A0F20654A5000136064 /* String.swift */; };
 		43729A162065574000136064 /* SFUIText-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 43729A142065551A00136064 /* SFUIText-Medium.otf */; };
 		43729A172065574100136064 /* SFUIText-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 43729A142065551A00136064 /* SFUIText-Medium.otf */; };
@@ -62,7 +64,10 @@
 		430E13D7204C398C0044EFF0 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		430E13D9204C39BD0044EFF0 /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
 		430E13DB204C39CD0044EFF0 /* MyProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileViewController.swift; sourceTree = "<group>"; };
-		4311F6F52067E06600B977B9 /* AddTaskCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskCollectionViewCell.swift; sourceTree = "<group>"; };
+		430F9F5B206CBC90002E2E50 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		430F9F64206D0CD0002E2E50 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		430F9F66206D0CEC002E2E50 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4311F6F52067E06600B977B9 /* TaskCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCollectionViewCell.swift; sourceTree = "<group>"; };
 		43729A0F20654A5000136064 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		43729A13206554CB00136064 /* SFUIText-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-Light.otf"; sourceTree = "<group>"; };
 		43729A142065551A00136064 /* SFUIText-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-Medium.otf"; sourceTree = "<group>"; };
@@ -123,11 +128,20 @@
 		430E13DD204C3E4C0044EFF0 /* Ressources */ = {
 			isa = PBXGroup;
 			children = (
+				430F9F65206D0CD0002E2E50 /* Localizable.strings */,
+				430F9F5E206D0ACB002E2E50 /* Fonts */,
+			);
+			path = Ressources;
+			sourceTree = "<group>";
+		};
+		430F9F5E206D0ACB002E2E50 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
 				43731AB5206BBB32005C82E1 /* SFUIText-Regular.otf */,
 				43729A13206554CB00136064 /* SFUIText-Light.otf */,
 				43729A142065551A00136064 /* SFUIText-Medium.otf */,
 			);
-			path = Ressources;
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		43729A0D20654A3900136064 /* Tools */ = {
@@ -142,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				43729A0F20654A5000136064 /* String.swift */,
+				430F9F5B206CBC90002E2E50 /* Color.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -149,7 +164,7 @@
 		43729A2020655CA700136064 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				4311F6F52067E06600B977B9 /* AddTaskCollectionViewCell.swift */,
+				4311F6F52067E06600B977B9 /* TaskCollectionViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -380,6 +395,7 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
 			);
 			mainGroup = 43F06E6D2044915500A00B18;
 			productRefGroup = 43F06E772044915500A00B18 /* Products */;
@@ -399,6 +415,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				43729A192065574600136064 /* SFUIText-Light.otf in Resources */,
+				430F9F63206D0CD0002E2E50 /* Localizable.strings in Resources */,
 				43729A162065574000136064 /* SFUIText-Medium.otf in Resources */,
 				43F06E842044915500A00B18 /* LaunchScreen.storyboard in Resources */,
 				43F06E812044915500A00B18 /* Assets.xcassets in Resources */,
@@ -594,10 +611,11 @@
 				43729A1020654A5000136064 /* String.swift in Sources */,
 				43F06EAB204491AE00A00B18 /* AccountManager.swift in Sources */,
 				430E13D8204C398C0044EFF0 /* ProfileViewController.swift in Sources */,
+				430F9F5C206CBC90002E2E50 /* Color.swift in Sources */,
 				430E13DA204C39BD0044EFF0 /* TaskViewController.swift in Sources */,
 				43F06EB12044926300A00B18 /* Task.swift in Sources */,
 				43F06EAD204491F400A00B18 /* Friend.swift in Sources */,
-				4311F6F62067E06600B977B9 /* AddTaskCollectionViewCell.swift in Sources */,
+				4311F6F62067E06600B977B9 /* TaskCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -633,6 +651,15 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		430F9F65206D0CD0002E2E50 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				430F9F64206D0CD0002E2E50 /* en */,
+				430F9F66206D0CEC002E2E50 /* fr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		43F06E7D2044915500A00B18 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

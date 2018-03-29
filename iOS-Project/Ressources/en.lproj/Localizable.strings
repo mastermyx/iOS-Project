@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  iOS-Project
+
+  Created by Arthur Hatchiguian on 29/03/2018.
+  Copyright © 2018 Arthur Hatchiguian. All rights reserved.
+*/
+
+"email" = "Email";
+"password" = "Password";
+"login" = "Login";
+"signIn" = "Sign in";
+"home" = "Home";
+"yourProfile" = "Your Profile";
+"regular" = "A regular task";
+"important" = "Important but not so urgent";
+"urgent" = "Urgent but not so important";
+"urgentAndImportant" = "Urgent and important";

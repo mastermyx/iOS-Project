@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  iOS-Project
+
+  Created by Arthur Hatchiguian on 29/03/2018.
+  Copyright © 2018 Arthur Hatchiguian. All rights reserved.
+*/
+
+"email" = "";
+"password" = "";
+"login" = "";
+"signIn" = "";
+"home" = "";
+"yourProfile" = "";
+"regular" = "";
+"important" = "";
+"urgent" = "";
+"urgentAndImportant" = "";

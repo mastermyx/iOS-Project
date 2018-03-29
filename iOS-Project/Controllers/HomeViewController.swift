@@ -31,13 +31,10 @@ class HomeViewController: ViewController, UICollectionViewDelegate, UICollection
         //setting title
         self.title = "home".localized.capitalized
         
-        
+        //setting collectionview flow layout
         let numberOfCellsPerRow: CGFloat = 2
         if let flowLayout = taskCollectionView?.collectionViewLayout as? UICollectionViewFlowLayout {
-           // let horizontalSpacing = flowLayout.scrollDirection == .vertical ? flowLayout.minimumInteritemSpacing : flowLayout.minimumLineSpacing
-          //  let cellWidth = (view.frame.width - max(0, numberOfCellsPerRow - 1) * horizontalSpacing)/numberOfCellsPerRow
-           let cellWidth = view.frame.width / numberOfCellsPerRow - 3
-            
+            let cellWidth = (view.frame.width / numberOfCellsPerRow) - 15
             flowLayout.itemSize = CGSize(width: cellWidth, height: 74)
         }
     }
@@ -60,14 +57,17 @@ class HomeViewController: ViewController, UICollectionViewDelegate, UICollection
     
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        print("test")
         return TaskManager.sharedInstance.task.count + 1
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         //
-        let cell = indexPath.item == 0 ? collectionView.dequeueReusableCell(withReuseIdentifier: "AddTaskCell", for: indexPath) as! AddTaskCollectionViewCell : collectionView.dequeueReusableCell(withReuseIdentifier: "AddTaskCell", for: indexPath) as! AddTaskCollectionViewCell
+        if indexPath.item == 0 {
+           return collectionView.dequeueReusableCell(withReuseIdentifier: "AddTaskCell", for: indexPath)
+        }
         
+        let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: "TaskCell", for: indexPath) as! TaskCollectionViewCell
+        cell.setCellForTask(task: TaskManager.sharedInstance.task[indexPath.item - 1])
         
         return cell
     }

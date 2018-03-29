@@ -10,19 +10,20 @@ import UIKit
 
 
 enum TaskType {
-    case type1
-    case type2
-    case type3
-    case type4
+    case regular
+    case important
+    case urgent
+    case urgentAndImportant
 }
 
 class Task: NSObject {
     let title : String
     let type : TaskType
+    let date : Date
     
-    
-    init(title: String, type: TaskType) {
+    init(title: String, type: TaskType, date: Date) {
         self.title = title
         self.type = type
+        self.date = date
     }
 }

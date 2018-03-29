@@ -13,7 +13,8 @@ class MyProfileViewController: ViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        //setting title
+        self.title = "yourProfile".localized.capitalized
     }
 
     override func didReceiveMemoryWarning() {
