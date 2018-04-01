@@ -12,7 +12,8 @@
 "signIn" = "Sign in";
 "home" = "Home";
 "yourProfile" = "Your Profile";
-"regular" = "A regular task";
-"important" = "Important but not so urgent";
-"urgent" = "Urgent but not so important";
-"urgentAndImportant" = "Urgent and important";
+"taskDetail" = "Task Detail (Edit)";
+"saveChange" = "Save changes";
+"deleteTask" = "Delete Task";
+"taskDescription" = "Description";
+"defaultTaskTitle" = "Regular";

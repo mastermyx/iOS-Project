@@ -9,21 +9,25 @@
 import UIKit
 
 
-enum TaskType {
-    case regular
-    case important
-    case urgent
-    case urgentAndImportant
+enum TaskType : Int {
+    case regular = 1
+    case important = 2
+    case urgent = 3
+    case urgentAndImportant = 4
 }
 
 class Task: NSObject {
     let title : String
     let type : TaskType
     let date : Date
+    let id : String
+    let desc : String
     
-    init(title: String, type: TaskType, date: Date) {
+    init(id: String, title: String, type: TaskType, date: Date, description: String) {
+        self.id = id
         self.title = title
         self.type = type
         self.date = date
+        self.desc = description
     }
 }

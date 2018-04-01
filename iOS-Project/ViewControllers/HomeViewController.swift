@@ -10,9 +10,6 @@ import UIKit
 
 class HomeViewController: ViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
-    
-
-
     @IBOutlet weak var taskCollectionView: UICollectionView!
     
     
@@ -37,16 +34,28 @@ class HomeViewController: ViewController, UICollectionViewDelegate, UICollection
             let cellWidth = (view.frame.width / numberOfCellsPerRow) - 15
             flowLayout.itemSize = CGSize(width: cellWidth, height: 74)
         }
+        
+        //load task from fake server
+        TaskManager.sharedInstance.get(success: {
+            self.taskCollectionView.reloadData()
+            print("tasks successfully loaded")
+        }, failure: {error in
+            print("error loading tasks")
+        })
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.taskCollectionView.reloadData()
     }
+    
     
     @IBAction func profileButtonClicked(_ sender: Any) {
         print("profile button clicked")
     }
+    
     
     
     // MARK: CollectionView Delegate
@@ -67,33 +76,24 @@ class HomeViewController: ViewController, UICollectionViewDelegate, UICollection
         }
         
         let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: "TaskCell", for: indexPath) as! TaskCollectionViewCell
-        cell.setCellForTask(task: TaskManager.sharedInstance.task[indexPath.item - 1])
+        cell.setCell(forTask: TaskManager.sharedInstance.task[indexPath.item - 1])
         
         return cell
     }
     
-//    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout,
-//                        sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-//
-//        // number of item per row
-//        let numberOfSets = CGFloat(2)
-//
-//        let width = (collectionView.frame.size.width - (numberOfSets * view.frame.size.width / 15)) / numberOfSets
-//
-//        let height = collectionView.frame.size.height / 2
-//
-//        return CGSize(width: width, height: height)
-//    }
-//
-//    // UICollectionViewDelegateFlowLayout method
-//
-//    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout,
-//                        insetForSectionAtIndex section: Int) -> UIEdgeInsets {
-//
-//        let cellWidthPadding = collectionView.frame.size.width / 30
-//        let cellHeightPadding = collectionView.frame.size.height / 4
-//        return UIEdgeInsets(top: cellHeightPadding,left: cellWidthPadding,
-//                            bottom: cellHeightPadding,right: cellWidthPadding)
-//    }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let taskVC = storyBoard.instantiateViewController(withIdentifier: "TaskViewController") as! TaskViewController
+        
+        if indexPath.item > 0 {
+            taskVC.new = false
+            taskVC.task = TaskManager.sharedInstance.task[indexPath.item - 1]
+            
+        } else {
+            taskVC.new = true
+        }
+        
+        self.navigationController?.pushViewController(taskVC, animated: true)
+    }
 
 }

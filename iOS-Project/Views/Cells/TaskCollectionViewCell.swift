@@ -20,12 +20,11 @@ class TaskCollectionViewCell: UICollectionViewCell {
         self.layer.cornerRadius = 5
     }
     
-    func setCellForTask(task: Task) {
+    func setCell(forTask task: Task) {
         let formatter = DateFormatter()
         formatter.dateStyle = .long
         
         self.dateLabel.text = formatter.string(from: task.date)
-        
         
         switch task.type {
         case .regular:

@@ -1,5 +1,5 @@
 //
-//  Friend.swift
+//  User.swift
 //  iOS-Project
 //
 //  Created by Arthur Hatchiguian on 26/02/2018.

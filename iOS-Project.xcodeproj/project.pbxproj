@@ -15,6 +15,12 @@
 		430E13DC204C39CD0044EFF0 /* MyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430E13DB204C39CD0044EFF0 /* MyProfileViewController.swift */; };
 		430F9F5C206CBC90002E2E50 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430F9F5B206CBC90002E2E50 /* Color.swift */; };
 		430F9F63206D0CD0002E2E50 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 430F9F65206D0CD0002E2E50 /* Localizable.strings */; };
+		4310A060206FD1B600C85D76 /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4310A05F206FD1B600C85D76 /* RoundedView.swift */; };
+		4310A062206FD64200C85D76 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4310A061206FD64200C85D76 /* RoundedButton.swift */; };
+		4310A064206FD70000C85D76 /* RoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4310A063206FD70000C85D76 /* RoundedTextField.swift */; };
+		4310D21C2071376E0056BAA5 /* TaskRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4310D21B2071376E0056BAA5 /* TaskRequestManager.swift */; };
+		4310D21E207138080056BAA5 /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4310D21D207138080056BAA5 /* RequestManager.swift */; };
+		4310D220207162240056BAA5 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4310D21F207162240056BAA5 /* UserManager.swift */; };
 		4311F6F62067E06600B977B9 /* TaskCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4311F6F52067E06600B977B9 /* TaskCollectionViewCell.swift */; };
 		43729A1020654A5000136064 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43729A0F20654A5000136064 /* String.swift */; };
 		43729A162065574000136064 /* SFUIText-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 43729A142065551A00136064 /* SFUIText-Medium.otf */; };
@@ -31,7 +37,7 @@
 		43F06E8F2044915500A00B18 /* iOS_ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F06E8E2044915500A00B18 /* iOS_ProjectTests.swift */; };
 		43F06E9A2044915500A00B18 /* iOS_ProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F06E992044915500A00B18 /* iOS_ProjectUITests.swift */; };
 		43F06EAB204491AE00A00B18 /* AccountManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F06EAA204491AE00A00B18 /* AccountManager.swift */; };
-		43F06EAD204491F400A00B18 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F06EAC204491F400A00B18 /* Friend.swift */; };
+		43F06EAD204491F400A00B18 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F06EAC204491F400A00B18 /* User.swift */; };
 		43F06EAF2044921D00A00B18 /* TaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F06EAE2044921D00A00B18 /* TaskManager.swift */; };
 		43F06EB12044926300A00B18 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F06EB02044926300A00B18 /* Task.swift */; };
 		81A8C2E44F27262CB081D864 /* Pods_iOS_Project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04AB206E8466A6877C6626FF /* Pods_iOS_Project.framework */; };
@@ -67,6 +73,12 @@
 		430F9F5B206CBC90002E2E50 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		430F9F64206D0CD0002E2E50 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		430F9F66206D0CEC002E2E50 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4310A05F206FD1B600C85D76 /* RoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
+		4310A061206FD64200C85D76 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		4310A063206FD70000C85D76 /* RoundedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTextField.swift; sourceTree = "<group>"; };
+		4310D21B2071376E0056BAA5 /* TaskRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRequestManager.swift; sourceTree = "<group>"; };
+		4310D21D207138080056BAA5 /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
+		4310D21F207162240056BAA5 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		4311F6F52067E06600B977B9 /* TaskCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCollectionViewCell.swift; sourceTree = "<group>"; };
 		43729A0F20654A5000136064 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		43729A13206554CB00136064 /* SFUIText-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-Light.otf"; sourceTree = "<group>"; };
@@ -86,7 +98,7 @@
 		43F06E992044915500A00B18 /* iOS_ProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_ProjectUITests.swift; sourceTree = "<group>"; };
 		43F06E9B2044915500A00B18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43F06EAA204491AE00A00B18 /* AccountManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountManager.swift; sourceTree = "<group>"; };
-		43F06EAC204491F400A00B18 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		43F06EAC204491F400A00B18 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		43F06EAE2044921D00A00B18 /* TaskManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskManager.swift; sourceTree = "<group>"; };
 		43F06EB02044926300A00B18 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		445E8E54FC30E69C5E970660 /* Pods_iOS_ProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_ProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -144,9 +156,20 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		4310A05E206FD15F00C85D76 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				4310A05F206FD1B600C85D76 /* RoundedView.swift */,
+				4310A061206FD64200C85D76 /* RoundedButton.swift */,
+				4310A063206FD70000C85D76 /* RoundedTextField.swift */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
 		43729A0D20654A3900136064 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				4310A05E206FD15F00C85D76 /* Class */,
 				43729A0E20654A3F00136064 /* Extensions */,
 			);
 			path = Tools;
@@ -196,7 +219,7 @@
 			children = (
 				43729A0D20654A3900136064 /* Tools */,
 				430E13DD204C3E4C0044EFF0 /* Ressources */,
-				43F06EA92044917F00A00B18 /* Controllers */,
+				43F06EA92044917F00A00B18 /* ViewControllers */,
 				43F06EA82044917500A00B18 /* Views */,
 				43F06EA72044916400A00B18 /* Models */,
 				43F06E792044915500A00B18 /* AppDelegate.swift */,
@@ -244,7 +267,7 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		43F06EA92044917F00A00B18 /* Controllers */ = {
+		43F06EA92044917F00A00B18 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				430E13D3204C37D50044EFF0 /* LoginViewController.swift */,
@@ -253,14 +276,14 @@
 				430E13D9204C39BD0044EFF0 /* TaskViewController.swift */,
 				430E13DB204C39CD0044EFF0 /* MyProfileViewController.swift */,
 			);
-			path = Controllers;
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		43F06EB22044927400A00B18 /* Objects */ = {
 			isa = PBXGroup;
 			children = (
 				43F06EB02044926300A00B18 /* Task.swift */,
-				43F06EAC204491F400A00B18 /* Friend.swift */,
+				43F06EAC204491F400A00B18 /* User.swift */,
 			);
 			path = Objects;
 			sourceTree = "<group>";
@@ -270,6 +293,9 @@
 			children = (
 				43F06EAE2044921D00A00B18 /* TaskManager.swift */,
 				43F06EAA204491AE00A00B18 /* AccountManager.swift */,
+				4310D21B2071376E0056BAA5 /* TaskRequestManager.swift */,
+				4310D21D207138080056BAA5 /* RequestManager.swift */,
+				4310D21F207162240056BAA5 /* UserManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -562,12 +588,14 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-iOS-Project/Pods-iOS-Project-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
@@ -602,19 +630,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4310D21C2071376E0056BAA5 /* TaskRequestManager.swift in Sources */,
 				430E13D4204C37D50044EFF0 /* LoginViewController.swift in Sources */,
+				4310A064206FD70000C85D76 /* RoundedTextField.swift in Sources */,
 				43F06E7C2044915500A00B18 /* ViewController.swift in Sources */,
 				43F06E7A2044915500A00B18 /* AppDelegate.swift in Sources */,
 				430E13D6204C397B0044EFF0 /* HomeViewController.swift in Sources */,
+				4310D21E207138080056BAA5 /* RequestManager.swift in Sources */,
 				430E13DC204C39CD0044EFF0 /* MyProfileViewController.swift in Sources */,
 				43F06EAF2044921D00A00B18 /* TaskManager.swift in Sources */,
 				43729A1020654A5000136064 /* String.swift in Sources */,
 				43F06EAB204491AE00A00B18 /* AccountManager.swift in Sources */,
+				4310A060206FD1B600C85D76 /* RoundedView.swift in Sources */,
 				430E13D8204C398C0044EFF0 /* ProfileViewController.swift in Sources */,
 				430F9F5C206CBC90002E2E50 /* Color.swift in Sources */,
+				4310A062206FD64200C85D76 /* RoundedButton.swift in Sources */,
 				430E13DA204C39BD0044EFF0 /* TaskViewController.swift in Sources */,
 				43F06EB12044926300A00B18 /* Task.swift in Sources */,
-				43F06EAD204491F400A00B18 /* Friend.swift in Sources */,
+				43F06EAD204491F400A00B18 /* User.swift in Sources */,
+				4310D220207162240056BAA5 /* UserManager.swift in Sources */,
 				4311F6F62067E06600B977B9 /* TaskCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

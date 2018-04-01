@@ -11,26 +11,19 @@ import UIKit
 class LoginViewController: ViewController {
 
     @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var emailTextField: UITextField!
-    @IBOutlet weak var passwordTextField: UITextField!
-    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var emailTextField: RoundedTextField!
+    @IBOutlet weak var passwordTextField: RoundedTextField!
+    @IBOutlet weak var loginButton: RoundedButton!
     
     
-    @IBOutlet weak var facebookLoginButton: UIButton!
-    @IBOutlet weak var googleLoginButton: UIButton!
-    @IBOutlet weak var signInButton: UIButton!
+    @IBOutlet weak var facebookLoginButton: RoundedButton!
+    @IBOutlet weak var googleLoginButton: RoundedButton!
+    @IBOutlet weak var signInButton: RoundedButton!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //setting corner radius
-        emailTextField.layer.cornerRadius = 5
-        passwordTextField.layer.cornerRadius = 5
-        loginButton.layer.cornerRadius = 5
-        facebookLoginButton.layer.cornerRadius = 5
-        googleLoginButton.layer.cornerRadius = 5
-        signInButton.layer.cornerRadius = 5
         
        //setting text
         emailTextField.placeholder = "email".localized
