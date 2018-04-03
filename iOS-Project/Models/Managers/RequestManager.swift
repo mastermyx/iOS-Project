@@ -22,7 +22,7 @@ class RequestManager: NSObject {
     static let MODIFY_USER = "\(SERVER_URL)/modifyUser"
     static let GET_ACCOUNT = "\(SERVER_URL)/getAccount"
     static let RENEW_PASSWORD = "\(SERVER_URL)/renewPassword"
-    
+    static let REGISTER = "\(SERVER_URL)/register"
     
     static func requestFor(requestUrl : URLConvertible,
                            method: HTTPMethod = .get,

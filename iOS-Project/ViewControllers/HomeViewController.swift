@@ -83,7 +83,6 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        //
         if indexPath.item == 0 {
            return collectionView.dequeueReusableCell(withReuseIdentifier: "AddTaskCell", for: indexPath)
         }

@@ -10,6 +10,7 @@
 		420001E09D2F4C9CF1A8802E /* Pods_iOS_ProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 343BB498779501A06C9D5F88 /* Pods_iOS_ProjectUITests.framework */; };
 		430B68F32073DC380081D0D5 /* FacebookManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430B68F22073DC370081D0D5 /* FacebookManager.swift */; };
 		430B68F52073DD460081D0D5 /* GoogleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430B68F42073DD460081D0D5 /* GoogleManager.swift */; };
+		430B68F72073EA0F0081D0D5 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430B68F62073EA0F0081D0D5 /* SignInViewController.swift */; };
 		430E13D4204C37D50044EFF0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430E13D3204C37D50044EFF0 /* LoginViewController.swift */; };
 		430E13D6204C397B0044EFF0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430E13D5204C397B0044EFF0 /* HomeViewController.swift */; };
 		430E13DA204C39BD0044EFF0 /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430E13D9204C39BD0044EFF0 /* TaskViewController.swift */; };
@@ -70,6 +71,7 @@
 		343BB498779501A06C9D5F88 /* Pods_iOS_ProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_ProjectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		430B68F22073DC370081D0D5 /* FacebookManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookManager.swift; sourceTree = "<group>"; };
 		430B68F42073DD460081D0D5 /* GoogleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleManager.swift; sourceTree = "<group>"; };
+		430B68F62073EA0F0081D0D5 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		430E13D3204C37D50044EFF0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		430E13D5204C397B0044EFF0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		430E13D9204C39BD0044EFF0 /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
@@ -281,6 +283,7 @@
 				430E13D5204C397B0044EFF0 /* HomeViewController.swift */,
 				430E13D9204C39BD0044EFF0 /* TaskViewController.swift */,
 				430E13DB204C39CD0044EFF0 /* MyProfileViewController.swift */,
+				430B68F62073EA0F0081D0D5 /* SignInViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -659,6 +662,7 @@
 				430E13DA204C39BD0044EFF0 /* TaskViewController.swift in Sources */,
 				43F06EB12044926300A00B18 /* Task.swift in Sources */,
 				43F06EAD204491F400A00B18 /* User.swift in Sources */,
+				430B68F72073EA0F0081D0D5 /* SignInViewController.swift in Sources */,
 				4310D220207162240056BAA5 /* UserManager.swift in Sources */,
 				4313DF9E20736646000C628C /* UserRequestManager.swift in Sources */,
 				4311F6F62067E06600B977B9 /* TaskCollectionViewCell.swift in Sources */,

@@ -53,6 +53,16 @@ class AccountManager: NSObject {
         })
     }
     
+    func register(email: String, password: String ,success: @escaping (()->()), failure: @escaping ((Error)->())) {
+        UserRequestManager.register(email: email, password: password, success: {
+            success()
+        }, failure: { (error) in
+            failure(error!)
+            print("error get")
+        })
+    }
+    
+    
     func renewPassword(success: @escaping (()->()), failure: @escaping ((Error)->())) {
         UserRequestManager.renewPassword(success: {
             success()

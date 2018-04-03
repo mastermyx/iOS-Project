@@ -74,7 +74,22 @@ class UserRequestManager: NSObject {
                 failure!(error)
             }
         }
-        
+    }
+    
+    static func register(email: String, password: String, success: (()->())? = nil, failure: ((Error?)->())? = nil) {
+        RequestManager.requestFor(
+            requestUrl: RequestManager.REGISTER,
+            method: .post,
+            parameters: nil,
+            success: { (result, response) in
+                if success != nil {
+                    success!()
+                }
+        }) { (error) in
+            if failure != nil {
+                failure!(error)
+            }
+        }
     }
     
     
