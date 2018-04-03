@@ -46,8 +46,8 @@ class MyProfileViewController: UIViewController, UITextViewDelegate {
             nameTextView.isEditable = false
         } else {
             saveButton.setTitle("saveChanges".localized, for: .normal)
-            renewPasswordButton.setTitle("renewPassword", for: .normal)
-            logoutButton.setTitle("logout", for: .normal)
+            renewPasswordButton.setTitle("renewPassword".localized, for: .normal)
+            logoutButton.setTitle("logout".localized, for: .normal)
         }
         
         profilePictureImageView.image = user.picture
