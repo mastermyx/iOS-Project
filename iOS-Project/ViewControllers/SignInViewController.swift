@@ -11,10 +11,11 @@ import UIKit
 class SignInViewController: UIViewController {
     @IBOutlet weak var signInButton: RoundedButton!
     @IBOutlet weak var emailTextView: RoundedTextField!
-    
     @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var passwordTextField: RoundedTextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -28,6 +29,10 @@ class SignInViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     @IBAction func signInButtonClicked(_ sender: Any) {
+        if emailTextView.text!.isEmpty || passwordTextField.text!.isEmpty {
+            error()
+            return
+        }
         AccountManager.sharedInstance.register(email: emailTextView.text!, password: passwordTextField.text!, success: {
             self.loggedIn()
         }, failure: {error in

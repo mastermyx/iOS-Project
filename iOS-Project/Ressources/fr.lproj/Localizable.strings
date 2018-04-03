@@ -6,16 +6,26 @@
   Copyright © 2018 Arthur Hatchiguian. All rights reserved.
 */
 
-"email" = "Email";
-"password" = "Password";
-"login" = "Login";
-"signIn" = "Sign in";
-"home" = "Home";
-"yourProfile" = "Your Profile";
-"taskDetail" = "Task Detail (Edit)";
-"saveChange" = "Save changes";
-"deleteTask" = "Delete Task";
+"email" = "   Email";
+"password" = "   Password";
+"login" = "Se connecter";
+"signIn" = "S'enregister";
+"home" = "Accueil";
+"yourProfile" = "Mon Profil";
+"profile" = "Profil";
+"taskDetail" = "Tâche (modifier)";
+"saveChange" = "Sauver le changement";
+"deleteTask" = "Supprimer la tâche";
 "taskDescription" = "Description";
-"defaultTaskTitle" = "Regular";
-"task" = "Task";
-"searchUser" = "Search users";
+"defaultTaskTitle" = "Régulière";
+"task" = "Tâche";
+"taskTitle" = "Tâche (modifier)";
+"searchUser" = "Chercher des utilisateurs";
+"alert" = "Alerte";
+"error" = "Une erreur est survenue";
+"ok" = "Ok";
+"sendEmail" = "Nous vous avons envoyé un email pour remettre à zero votre mot de passe";
+"saveChanges" = "Sauver les changements";
+"logout" = "Se deconnecter";
+"renewPassword" = "Changer de mot de passe";
+"back" = "Retour";

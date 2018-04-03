@@ -42,6 +42,11 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func loginButtonClicked(_ sender: Any) {
+        if emailTextField.text!.isEmpty || passwordTextField.text!.isEmpty {
+            error()
+            return
+        }
+        
         AccountManager.sharedInstance.login(withEmail: emailTextField.text!, password: passwordTextField.text!, success: {
             self.loggedIn()
        }, failure: {error in
