@@ -26,4 +26,56 @@ class UserRequestManager: NSObject {
         }
         
     }
+    
+    static func modify(user: User, success: (()->())? = nil, failure: ((Error?)->())? = nil) {
+        RequestManager.requestFor(
+            requestUrl: RequestManager.MODIFY_USER,
+            method: .post,
+            parameters: nil,
+            success: { (result, response) in
+                if success != nil {
+                    success!()
+                }
+        }) { (error) in
+            if failure != nil {
+                failure!(error)
+            }
+        }
+        
+    }
+    
+    static func getAccount(success: (()->())? = nil, failure: ((Error?)->())? = nil) {
+        RequestManager.requestFor(
+            requestUrl: RequestManager.GET_ACCOUNT,
+            method: .post,
+            parameters: nil,
+            success: { (result, response) in
+                if success != nil {
+                    success!()
+                }
+        }) { (error) in
+            if failure != nil {
+                failure!(error)
+            }
+        }
+        
+    }
+    static func renewPassword(success: (()->())? = nil, failure: ((Error?)->())? = nil) {
+        RequestManager.requestFor(
+            requestUrl: RequestManager.RENEW_PASSWORD,
+            method: .post,
+            parameters: nil,
+            success: { (result, response) in
+                if success != nil {
+                    success!()
+                }
+        }) { (error) in
+            if failure != nil {
+                failure!(error)
+            }
+        }
+        
+    }
+    
+    
 }

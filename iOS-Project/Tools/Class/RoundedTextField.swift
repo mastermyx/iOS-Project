@@ -10,9 +10,21 @@ import UIKit
 
 class RoundedTextField: UITextField {
 
+    let inset: CGFloat = 10
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
         self.layer.cornerRadius = 5
+    }
+    
+    // placeholder position
+    override func textRect(forBounds bounds: CGRect) -> CGRect {
+        return bounds.insetBy(dx: inset, dy: inset)
+    }
+    
+    // text position
+    override func editingRect(forBounds bounds: CGRect) -> CGRect {
+        return bounds.insetBy(dx: inset, dy: inset)
     }
 }

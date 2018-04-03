@@ -45,4 +45,14 @@ class UserManager: NSObject {
         return nil
     }
     
+    func modify(userForID id: String, newUser: User) {
+        for obj in users {
+            if obj.id == id {
+                print("USER FIND ")
+                self.users[self.users.index(of: obj)!] = newUser
+                break
+            }
+        }
+    }
+    
 }

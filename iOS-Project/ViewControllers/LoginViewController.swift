@@ -42,20 +42,42 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func loginButtonClicked(_ sender: Any) {
-        print("login button clicked")
+        AccountManager.sharedInstance.login(withEmail: emailTextField.text!, password: passwordTextField.text!, success: {
+            self.loggedIn()
+       }, failure: {error in
+        
+       })
     }
 
     @IBAction func facebookLoginClicked(_ sender: Any) {
-        print("facebook login button clicked")
+        AccountManager.sharedInstance.loginWithFacebook(success: {
+            self.loggedIn()
+        }, failure: {error in
+            
+        })
+        
     }
     
     @IBAction func googleLoginButtonClicked(_ sender: Any) {
-        print("google login button clicked")
+        AccountManager.sharedInstance.loginWithGoogle(success: {
+            self.loggedIn()
+        }, failure: {error in
+            
+        })
     }
     
     @IBAction func signInButtonClicked(_ sender: Any) {
         print("sign in button clicked")
     }
     
+    func loggedIn(){
+        performSegue(withIdentifier: "loggedIn", sender: self)
+    }
+    
+    func error() {
+        let alert = UIAlertController(title: "alert".localized, message: "error".localized, preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "ok".localized, style: UIAlertActionStyle.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
 
 }

@@ -60,7 +60,13 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     
     @IBAction func profileButtonClicked(_ sender: Any) {
-        print("profile button clicked")
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let profileVC = storyBoard.instantiateViewController(withIdentifier: "ProfileVC") as! MyProfileViewController
+        
+        profileVC.myProfile = true
+        profileVC.user = AccountManager.sharedInstance.user
+        
+        self.navigationController?.pushViewController(profileVC, animated: true)
     }
     
     

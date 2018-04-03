@@ -19,6 +19,10 @@ class RequestManager: NSObject {
     static let ADD_TASK = "\(SERVER_URL)/addTask"
     static let GET_TASK = "\(SERVER_URL)/getTask"
     static let GET_USER = "\(SERVER_URL)/getUsers"
+    static let MODIFY_USER = "\(SERVER_URL)/modifyUser"
+    static let GET_ACCOUNT = "\(SERVER_URL)/getAccount"
+    static let RENEW_PASSWORD = "\(SERVER_URL)/renewPassword"
+    
     
     static func requestFor(requestUrl : URLConvertible,
                            method: HTTPMethod = .get,

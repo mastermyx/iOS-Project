@@ -38,7 +38,7 @@ class TaskViewController: UIViewController, UICollectionViewDelegate, UICollecti
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.title = "task".localized
+        self.title = "taskTitle".localized
         
         //setting textviews maxlines
         titleTextView.textContainer.maximumNumberOfLines = 3
@@ -183,7 +183,12 @@ class TaskViewController: UIViewController, UICollectionViewDelegate, UICollecti
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-     //gotouser   user[indexPath.item].picture
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let profileVC = storyBoard.instantiateViewController(withIdentifier: "ProfileVC") as! MyProfileViewController
+        
+        profileVC.user = user[indexPath.item]
+        
+        self.navigationController?.pushViewController(profileVC, animated: true)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize
