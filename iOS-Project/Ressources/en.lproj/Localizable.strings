@@ -17,3 +17,5 @@
 "deleteTask" = "Delete Task";
 "taskDescription" = "Description";
 "defaultTaskTitle" = "Regular";
+"task" = "Task";
+"searchUser" = "Search users";

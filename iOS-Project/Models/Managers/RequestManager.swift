@@ -11,13 +11,14 @@ import Foundation
 import Alamofire
 
 class RequestManager: NSObject {
-    
-    static let SERVER_URL = "www.fake.url/"
+
+    static let SERVER_URL = "https://www.fake.url/"
     
     static let DELETE_TASK = "\(SERVER_URL)/deleteTask"
     static let MODIFY_TASK = "\(SERVER_URL)/modifyTask"
     static let ADD_TASK = "\(SERVER_URL)/addTask"
     static let GET_TASK = "\(SERVER_URL)/getTask"
+    static let GET_USER = "\(SERVER_URL)/getUsers"
     
     static func requestFor(requestUrl : URLConvertible,
                            method: HTTPMethod = .get,
@@ -27,8 +28,8 @@ class RequestManager: NSObject {
                            success: @escaping ([String:Any], HTTPURLResponse?) -> (),
                            failure: ((Error) -> ())? = nil) {
         
-        //faking server answer
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+        //faking server answer after short delay
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
             success([:], nil)
         }
         

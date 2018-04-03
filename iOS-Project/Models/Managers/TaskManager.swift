@@ -21,6 +21,12 @@ class TaskManager: NSObject {
     
     func modify(id: String, task: Task, success: @escaping (()->()), failure: @escaping ((Error)->())) {
         TaskRequestManager.modify(id: id, success: {
+            for obj in self.tasks {
+                if obj.id == id {
+                    self.tasks[self.tasks.index(of: obj)!] = task
+                    break
+                }
+            }
                 success()
             }, failure: { (error) in
                 failure(error!)
@@ -32,7 +38,7 @@ class TaskManager: NSObject {
         TaskRequestManager.delete(id: id, success: {
             for task in self.tasks {
                 if task.id == id {
-                    self.task.remove(at: self.task.index(of: task)!)
+                    self.tasks.remove(at: self.tasks.index(of: task)!)
                     break
                 }
             }
@@ -66,6 +72,7 @@ class TaskManager: NSObject {
     
     func add(task: Task, success: @escaping (()->()), failure: @escaping ((Error)->())) {
         TaskRequestManager.add(task: task, success: {
+            self.tasks.append(task)
             success()
         }, failure: { error in
             failure(error!)

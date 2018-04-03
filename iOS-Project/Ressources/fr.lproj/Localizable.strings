@@ -6,10 +6,16 @@
   Copyright © 2018 Arthur Hatchiguian. All rights reserved.
 */
 
-"email" = "";
-"password" = "";
-"login" = "";
-"signIn" = "";
-"home" = "";
-"yourProfile" = "";
-
+"email" = "Email";
+"password" = "Password";
+"login" = "Login";
+"signIn" = "Sign in";
+"home" = "Home";
+"yourProfile" = "Your Profile";
+"taskDetail" = "Task Detail (Edit)";
+"saveChange" = "Save changes";
+"deleteTask" = "Delete Task";
+"taskDescription" = "Description";
+"defaultTaskTitle" = "Regular";
+"task" = "Task";
+"searchUser" = "Search users";

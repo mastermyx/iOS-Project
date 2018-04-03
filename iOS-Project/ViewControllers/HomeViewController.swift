@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HomeViewController: ViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class HomeViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
     @IBOutlet weak var taskCollectionView: UICollectionView!
     
@@ -42,6 +42,13 @@ class HomeViewController: ViewController, UICollectionViewDelegate, UICollection
         }, failure: {error in
             print("error loading tasks")
         })
+        
+        //load user from fake server
+        UserManager.sharedInstance.get(success: {
+            print("users successfully loaded")
+        }, failure: {error in
+            print("error loading user")
+        })
     }
 
     
@@ -66,7 +73,7 @@ class HomeViewController: ViewController, UICollectionViewDelegate, UICollection
     
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return TaskManager.sharedInstance.task.count + 1
+        return TaskManager.sharedInstance.tasks.count + 1
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -76,7 +83,7 @@ class HomeViewController: ViewController, UICollectionViewDelegate, UICollection
         }
         
         let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: "TaskCell", for: indexPath) as! TaskCollectionViewCell
-        cell.setCell(forTask: TaskManager.sharedInstance.task[indexPath.item - 1])
+        cell.setCell(forTask: TaskManager.sharedInstance.tasks[indexPath.item - 1])
         
         return cell
     }
@@ -87,7 +94,7 @@ class HomeViewController: ViewController, UICollectionViewDelegate, UICollection
         
         if indexPath.item > 0 {
             taskVC.new = false
-            taskVC.task = TaskManager.sharedInstance.task[indexPath.item - 1]
+            taskVC.task = TaskManager.sharedInstance.tasks[indexPath.item - 1]
             
         } else {
             taskVC.new = true

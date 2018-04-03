@@ -17,11 +17,12 @@ enum TaskType : Int {
 }
 
 class Task: NSObject {
-    let title : String
-    let type : TaskType
-    let date : Date
-    let id : String
-    let desc : String
+    var title : String
+    var type : TaskType
+    var date : Date
+    var id : String
+    var desc : String
+    var users : [User] = []
     
     init(id: String, title: String, type: TaskType, date: Date, description: String) {
         self.id = id
@@ -29,5 +30,9 @@ class Task: NSObject {
         self.type = type
         self.date = date
         self.desc = description
+    }
+    
+    func setUsers(users: [User]) {
+        self.users = users
     }
 }

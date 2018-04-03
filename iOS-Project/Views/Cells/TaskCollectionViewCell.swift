@@ -25,37 +25,26 @@ class TaskCollectionViewCell: UICollectionViewCell {
         formatter.dateStyle = .long
         
         self.dateLabel.text = formatter.string(from: task.date)
+        self.statusLabel.text = task.title
         
         switch task.type {
         case .regular:
             self.backgroundColor = UIColor.init(rgb: 0xF8E81C).withAlphaComponent(0.4)
-            
-            self.statusLabel.text = "regular".localized
-            
             self.urgentImageView.alpha = 0.25
             self.importantImageView.alpha = 0.25
             break
         case .important:
             self.backgroundColor = UIColor.init(rgb: 0x0DA0B2).withAlphaComponent(0.8)
-            
-            self.statusLabel.text = "important".localized
-            
             self.urgentImageView.alpha = 0.25
             self.importantImageView.alpha = 1
             break
         case .urgent:
             self.backgroundColor = UIColor.init(rgb: 0x7ED321).withAlphaComponent(0.8)
-            
-            self.statusLabel.text = "urgent".localized
-            
             self.urgentImageView.alpha = 1
             self.importantImageView.alpha = 0.25
             break
         case .urgentAndImportant:
             self.backgroundColor = UIColor.init(rgb: 0xFF3A07).withAlphaComponent(0.8)
-            
-            self.statusLabel.text = "urgentAndImportant".localized
-            
             self.urgentImageView.alpha = 1
             self.importantImageView.alpha = 1
             break

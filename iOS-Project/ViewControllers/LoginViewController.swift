@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoginViewController: ViewController {
+class LoginViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var emailTextField: RoundedTextField!
@@ -36,6 +36,11 @@ class LoginViewController: ViewController {
         UIApplication.shared.statusBarStyle = .lightContent
     }
 
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
     @IBAction func loginButtonClicked(_ sender: Any) {
         print("login button clicked")
     }

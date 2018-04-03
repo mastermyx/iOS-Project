@@ -22,6 +22,9 @@
 		4310D21E207138080056BAA5 /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4310D21D207138080056BAA5 /* RequestManager.swift */; };
 		4310D220207162240056BAA5 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4310D21F207162240056BAA5 /* UserManager.swift */; };
 		4311F6F62067E06600B977B9 /* TaskCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4311F6F52067E06600B977B9 /* TaskCollectionViewCell.swift */; };
+		4313DF9E20736646000C628C /* UserRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4313DF9D20736646000C628C /* UserRequestManager.swift */; };
+		4313DFA02073750F000C628C /* UserCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4313DF9F2073750F000C628C /* UserCollectionViewCell.swift */; };
+		4313DFA220737BCF000C628C /* SearchUserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4313DFA120737BCF000C628C /* SearchUserTableViewCell.swift */; };
 		43729A1020654A5000136064 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43729A0F20654A5000136064 /* String.swift */; };
 		43729A162065574000136064 /* SFUIText-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 43729A142065551A00136064 /* SFUIText-Medium.otf */; };
 		43729A172065574100136064 /* SFUIText-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 43729A142065551A00136064 /* SFUIText-Medium.otf */; };
@@ -30,7 +33,6 @@
 		43729A1A2065574700136064 /* SFUIText-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 43729A13206554CB00136064 /* SFUIText-Light.otf */; };
 		43729A1B2065574800136064 /* SFUIText-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 43729A13206554CB00136064 /* SFUIText-Light.otf */; };
 		43F06E7A2044915500A00B18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F06E792044915500A00B18 /* AppDelegate.swift */; };
-		43F06E7C2044915500A00B18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F06E7B2044915500A00B18 /* ViewController.swift */; };
 		43F06E7F2044915500A00B18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43F06E7D2044915500A00B18 /* Main.storyboard */; };
 		43F06E812044915500A00B18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43F06E802044915500A00B18 /* Assets.xcassets */; };
 		43F06E842044915500A00B18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43F06E822044915500A00B18 /* LaunchScreen.storyboard */; };
@@ -80,13 +82,15 @@
 		4310D21D207138080056BAA5 /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
 		4310D21F207162240056BAA5 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		4311F6F52067E06600B977B9 /* TaskCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCollectionViewCell.swift; sourceTree = "<group>"; };
+		4313DF9D20736646000C628C /* UserRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRequestManager.swift; sourceTree = "<group>"; };
+		4313DF9F2073750F000C628C /* UserCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCollectionViewCell.swift; sourceTree = "<group>"; };
+		4313DFA120737BCF000C628C /* SearchUserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUserTableViewCell.swift; sourceTree = "<group>"; };
 		43729A0F20654A5000136064 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		43729A13206554CB00136064 /* SFUIText-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-Light.otf"; sourceTree = "<group>"; };
 		43729A142065551A00136064 /* SFUIText-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-Medium.otf"; sourceTree = "<group>"; };
 		43731AB5206BBB32005C82E1 /* SFUIText-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-Regular.otf"; sourceTree = "<group>"; };
 		43F06E762044915500A00B18 /* iOS-Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		43F06E792044915500A00B18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		43F06E7B2044915500A00B18 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		43F06E7E2044915500A00B18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		43F06E802044915500A00B18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43F06E832044915500A00B18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -188,6 +192,8 @@
 			isa = PBXGroup;
 			children = (
 				4311F6F52067E06600B977B9 /* TaskCollectionViewCell.swift */,
+				4313DF9F2073750F000C628C /* UserCollectionViewCell.swift */,
+				4313DFA120737BCF000C628C /* SearchUserTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -223,7 +229,6 @@
 				43F06EA82044917500A00B18 /* Views */,
 				43F06EA72044916400A00B18 /* Models */,
 				43F06E792044915500A00B18 /* AppDelegate.swift */,
-				43F06E7B2044915500A00B18 /* ViewController.swift */,
 				43F06E7D2044915500A00B18 /* Main.storyboard */,
 				43F06E802044915500A00B18 /* Assets.xcassets */,
 				43F06E822044915500A00B18 /* LaunchScreen.storyboard */,
@@ -296,6 +301,7 @@
 				4310D21B2071376E0056BAA5 /* TaskRequestManager.swift */,
 				4310D21D207138080056BAA5 /* RequestManager.swift */,
 				4310D21F207162240056BAA5 /* UserManager.swift */,
+				4313DF9D20736646000C628C /* UserRequestManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -633,22 +639,24 @@
 				4310D21C2071376E0056BAA5 /* TaskRequestManager.swift in Sources */,
 				430E13D4204C37D50044EFF0 /* LoginViewController.swift in Sources */,
 				4310A064206FD70000C85D76 /* RoundedTextField.swift in Sources */,
-				43F06E7C2044915500A00B18 /* ViewController.swift in Sources */,
 				43F06E7A2044915500A00B18 /* AppDelegate.swift in Sources */,
 				430E13D6204C397B0044EFF0 /* HomeViewController.swift in Sources */,
 				4310D21E207138080056BAA5 /* RequestManager.swift in Sources */,
 				430E13DC204C39CD0044EFF0 /* MyProfileViewController.swift in Sources */,
 				43F06EAF2044921D00A00B18 /* TaskManager.swift in Sources */,
+				4313DFA02073750F000C628C /* UserCollectionViewCell.swift in Sources */,
 				43729A1020654A5000136064 /* String.swift in Sources */,
 				43F06EAB204491AE00A00B18 /* AccountManager.swift in Sources */,
 				4310A060206FD1B600C85D76 /* RoundedView.swift in Sources */,
 				430E13D8204C398C0044EFF0 /* ProfileViewController.swift in Sources */,
 				430F9F5C206CBC90002E2E50 /* Color.swift in Sources */,
+				4313DFA220737BCF000C628C /* SearchUserTableViewCell.swift in Sources */,
 				4310A062206FD64200C85D76 /* RoundedButton.swift in Sources */,
 				430E13DA204C39BD0044EFF0 /* TaskViewController.swift in Sources */,
 				43F06EB12044926300A00B18 /* Task.swift in Sources */,
 				43F06EAD204491F400A00B18 /* User.swift in Sources */,
 				4310D220207162240056BAA5 /* UserManager.swift in Sources */,
+				4313DF9E20736646000C628C /* UserRequestManager.swift in Sources */,
 				4311F6F62067E06600B977B9 /* TaskCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
