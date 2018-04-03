@@ -225,24 +225,21 @@ line 3</string>
                                                 <rect key="frame" x="10" y="5" width="206" height="69"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="lNQ-9b-uU8">
-                                                    <size key="itemSize" width="76" height="76"/>
+                                                    <size key="itemSize" width="80" height="80"/>
                                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 </collectionViewFlowLayout>
                                                 <cells>
                                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="userCell" id="Jao-lg-GWh" customClass="UserCollectionViewCell" customModule="iOS_Project" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="76" height="76"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                                            <rect key="frame" x="0.0" y="0.0" width="76" height="76"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
-                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile-picture1" translatesAutoresizingMaskIntoConstraints="NO" id="Fzh-tA-ojY">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="76" height="76"/>
-                                                                    <constraints>
-                                                                        <constraint firstAttribute="width" secondItem="Fzh-tA-ojY" secondAttribute="height" multiplier="1:1" id="KcA-eQ-hkC"/>
-                                                                    </constraints>
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile-picture1" translatesAutoresizingMaskIntoConstraints="NO" id="Fzh-tA-ojY">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                                                 </imageView>
                                                             </subviews>
                                                         </view>
@@ -410,7 +407,7 @@ line3</string>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PlW-PS-MFt">
-                                                            <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="320" height="79.5"/>
                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </view>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="RAV-zn-jeo">
@@ -420,7 +417,7 @@ line3</string>
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="uSz-1u-XSk">
-                                                            <rect key="frame" x="84.5" y="28.5" width="285.5" height="21"/>
+                                                            <rect key="frame" x="84.5" y="28.5" width="230.5" height="21"/>
                                                             <fontDescription key="fontDescription" name="SFUIText-Light" family="SF UI Text" pointSize="18"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>

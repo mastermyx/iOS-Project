@@ -9,7 +9,7 @@
 import UIKit
 
 
-class TaskViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate, UITextViewDelegate {
+class TaskViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate, UITextViewDelegate {
     
     @IBOutlet weak var titleTextView: UITextView!
     @IBOutlet weak var userCollectionView: UICollectionView!
@@ -51,17 +51,18 @@ class TaskViewController: UIViewController, UICollectionViewDelegate, UICollecti
         
         
         task != nil ? setViewControllerForTask(task: task!) : setViewControllerForNewTask()
+        
         filtredUsers = UserManager.sharedInstance.users
         
         
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
-        let width = UIScreen.main.bounds.width
-    //    layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        
+        layout.itemSize = CGSize(width: userCollectionView.frame.height, height: userCollectionView.frame.height)
+        
+    
         layout.minimumInteritemSpacing = 0
         layout.minimumLineSpacing = 0
         userCollectionView.collectionViewLayout = layout
-     
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -201,12 +202,6 @@ class TaskViewController: UIViewController, UICollectionViewDelegate, UICollecti
         self.navigationController?.pushViewController(profileVC, animated: true)
     }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize
-    {
-        return CGSize(width: userCollectionView.frame.size.height, height: userCollectionView.frame.size.height)
-    }
-    
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return filtredUsers.count
     }
@@ -256,13 +251,14 @@ class TaskViewController: UIViewController, UICollectionViewDelegate, UICollecti
     }
     
     func hideSearchBar() {
+        self.searchBar.text = ""
+        filtredUsers = UserManager.sharedInstance.users
         self.navigationController?.setNavigationBarHidden(false, animated: false)
         self.searchView.isHidden = true
     }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        print("search \(searchText)")
-        
+        // filtring search bar
         if searchText == "" {
             filtredUsers = UserManager.sharedInstance.users
         } else {
