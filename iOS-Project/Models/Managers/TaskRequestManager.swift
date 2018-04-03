@@ -11,7 +11,6 @@ import UIKit
 class TaskRequestManager: NSObject {
 
     static func delete(id: String, success: (()->())? = nil, failure: ((Error?)->())? = nil) {
-        
         RequestManager.requestFor(
             requestUrl: RequestManager.DELETE_TASK,
             method: .post,

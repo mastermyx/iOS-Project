@@ -11,7 +11,11 @@ import UIKit
 class TaskManager: NSObject {
     static let sharedInstance = TaskManager()
     
-    var tasks : [Task] = []
+    var tasks : [Task] = [] {
+        didSet {
+            tasks = tasks.sorted(by: {$0.type.rawValue > $1.type.rawValue})
+        }
+    }
     
     override init() {
         super.init()

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		420001E09D2F4C9CF1A8802E /* Pods_iOS_ProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 343BB498779501A06C9D5F88 /* Pods_iOS_ProjectUITests.framework */; };
+		430B68F32073DC380081D0D5 /* FacebookManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430B68F22073DC370081D0D5 /* FacebookManager.swift */; };
+		430B68F52073DD460081D0D5 /* GoogleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430B68F42073DD460081D0D5 /* GoogleManager.swift */; };
 		430E13D4204C37D50044EFF0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430E13D3204C37D50044EFF0 /* LoginViewController.swift */; };
 		430E13D6204C397B0044EFF0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430E13D5204C397B0044EFF0 /* HomeViewController.swift */; };
 		430E13DA204C39BD0044EFF0 /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430E13D9204C39BD0044EFF0 /* TaskViewController.swift */; };
@@ -66,6 +68,8 @@
 		04AB206E8466A6877C6626FF /* Pods_iOS_Project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_Project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DCF0B35DB6632B8B301490D /* Pods-iOS-ProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-ProjectTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-ProjectTests/Pods-iOS-ProjectTests.release.xcconfig"; sourceTree = "<group>"; };
 		343BB498779501A06C9D5F88 /* Pods_iOS_ProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_ProjectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		430B68F22073DC370081D0D5 /* FacebookManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookManager.swift; sourceTree = "<group>"; };
+		430B68F42073DD460081D0D5 /* GoogleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleManager.swift; sourceTree = "<group>"; };
 		430E13D3204C37D50044EFF0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		430E13D5204C397B0044EFF0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		430E13D9204C39BD0044EFF0 /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
@@ -299,6 +303,8 @@
 				4310D21D207138080056BAA5 /* RequestManager.swift */,
 				4310D21F207162240056BAA5 /* UserManager.swift */,
 				4313DF9D20736646000C628C /* UserRequestManager.swift */,
+				430B68F22073DC370081D0D5 /* FacebookManager.swift */,
+				430B68F42073DD460081D0D5 /* GoogleManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -637,6 +643,7 @@
 				430E13D4204C37D50044EFF0 /* LoginViewController.swift in Sources */,
 				4310A064206FD70000C85D76 /* RoundedTextField.swift in Sources */,
 				43F06E7A2044915500A00B18 /* AppDelegate.swift in Sources */,
+				430B68F52073DD460081D0D5 /* GoogleManager.swift in Sources */,
 				430E13D6204C397B0044EFF0 /* HomeViewController.swift in Sources */,
 				4310D21E207138080056BAA5 /* RequestManager.swift in Sources */,
 				430E13DC204C39CD0044EFF0 /* MyProfileViewController.swift in Sources */,
@@ -644,6 +651,7 @@
 				4313DFA02073750F000C628C /* UserCollectionViewCell.swift in Sources */,
 				43729A1020654A5000136064 /* String.swift in Sources */,
 				43F06EAB204491AE00A00B18 /* AccountManager.swift in Sources */,
+				430B68F32073DC380081D0D5 /* FacebookManager.swift in Sources */,
 				4310A060206FD1B600C85D76 /* RoundedView.swift in Sources */,
 				430F9F5C206CBC90002E2E50 /* Color.swift in Sources */,
 				4313DFA220737BCF000C628C /* SearchUserTableViewCell.swift in Sources */,

@@ -54,6 +54,13 @@ class TaskViewController: UIViewController, UICollectionViewDelegate, UICollecti
         filtredUsers = UserManager.sharedInstance.users
         
         
+        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
+        let width = UIScreen.main.bounds.width
+    //    layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        layout.minimumInteritemSpacing = 0
+        layout.minimumLineSpacing = 0
+        userCollectionView.collectionViewLayout = layout
+     
         
     }
 
@@ -68,6 +75,9 @@ class TaskViewController: UIViewController, UICollectionViewDelegate, UICollecti
         self.dateLabel.text = formatter.string(from: Date())
         self.descTextView.text = "taskDecription".localized
         self.titleTextView.text = "defaultTaskTitle".localized
+        
+        self.urgentButton.alpha = self.urgent ? 1 : 0.3
+        self.importantButton.alpha = self.important ? 1 : 0.3
     }
     
     func setViewControllerForTask(task: Task) {

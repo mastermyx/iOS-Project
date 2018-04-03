@@ -30,25 +30,25 @@ class AccountManager: NSObject {
     }
     
     func loginWithFacebook(success: @escaping (()->()), failure: @escaping ((Error)->())) {
-        UserRequestManager.getAccount(success: {
+        FacebookManager.sharedInstance.login(success: {
             //creating fake user
             self.user = User.init(name: "Donald Trump", picture: #imageLiteral(resourceName: "profile-picture1"), id: "1", email: "donald.trump@usa.com", desc: "Mr president.")
             
             success()
         }, failure: { (error) in
-            failure(error!)
+            failure(error)
             print("error get")
         })
     }
     
     func loginWithGoogle(success: @escaping (()->()), failure: @escaping ((Error)->())) {
-        UserRequestManager.getAccount(success: {
+        GoogleManager.sharedInstance.login(success: {
             //creating fake user
             self.user = User.init(name: "Donald Trump", picture: #imageLiteral(resourceName: "profile-picture1"), id: "1", email: "donald.trump@usa.com", desc: "Mr president.")
             
             success()
         }, failure: { (error) in
-            failure(error!)
+            failure(error)
             print("error get")
         })
     }
