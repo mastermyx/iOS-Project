@@ -1,8 +1,8 @@
 # iOS-Project
 Module iOS - Epitech
 
-Xavier MENU
-Arthur HATCHIGUIAN
+Xavier MENU (xavier.menu@epitech.eu) /
+Arthur HATCHIGUIAN (arthur.hatchiguian@epitech.eu)
 
 Application reprennant le concepte du Eisenhower Task Matrix.
 
